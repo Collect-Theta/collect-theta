@@ -1,7 +1,7 @@
 {
   "name": "collect-theta",
   "version": "1.0.0",
-  "description": "An app that lets users automatically trade options with the Wheel strategy",
+  "description": "An app that lets users automatically trade options strategies",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
