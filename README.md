@@ -13,6 +13,7 @@ This is a site that will helps users collect theta by providing free options tra
 - [ ] Handling real money
 - [ ] Allow users to post new strategies that people can add to their accounts and use 
 - [ ] Have all stock quotes update in real time (need license)
+- [ ] User education system (videos about option strategies) 
 
 ## Technologies Used
 * MongoDB
