@@ -13,7 +13,7 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
-  "author": "Edmond Hui",
+  "author": "Edmond Hui, Andrew Hu",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
