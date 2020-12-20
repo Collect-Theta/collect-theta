@@ -10,7 +10,7 @@
     "frontend-install": "npm install --prefix frontend",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install --prefix ../web && yarn run build --prefix ../web"
   },
   "keywords": [],
   "author": "Edmond Hui, Andrew Hu",
