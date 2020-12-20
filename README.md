@@ -2,37 +2,26 @@
 
 This is a site that will helps users collect theta by providing free options trading and automated options strategies that users can customize to fit their investing strategies. Users must be exerpeinced option traders to use this app.
 
-## Functionality & MVP
+# Table of Contents
 
-- [ ] User auth
-- [ ] Live options data & trading for specific high option volume stocks
-- [ ] Customizable options strategies ex. (Wheel: users can choose DTE, OTM Probability, Num Contracts, Profit Taking)
-- [ ] Sleek user dashboard (easy to check value of portfolio, news, and search for good strategies)
+1. [Development Setup](#development-setup)
+2. [Roadmap](ROADMAP.md)
 
-### Bonus Features
+# Development Setup
 
-- [ ] Payment setup for premium membership
-- [ ] Mobile application
-- [ ] More options strategies
-- [ ] Handling real money
-- [ ] Allow users to post new strategies that people can add to their accounts and use
-- [ ] Have all stock quotes update in real time (need license)
-- [ ] User education system (videos about option strategies)
-- [ ] Signup verification (SSN & Identification)
+## yarn
 
-## Technologies Used
-
-- MongoDB
-- Express
-- React
-- Node
-
-## Technical Challenges
-
-# Wireframes
-
-# Developer Environment
+On macOS: `brew install yarn`
+On Linux or Windows (with `npm` already installed): `sudo npm install -g yarn`
 
 ## Node Version
 
 Run `nvm use` in the directory containing `.nvmrc` to set the Node version.
+
+```bash
+$ nvm use
+Found '$HOME/collect-theta/collect-theta/.nvmrc' with version <v12.14.1>
+N/A: version "v12.14.1 -> N/A" is not yet installed.
+
+You need to run "nvm install v12.14.1" to install it before using it.
+```
