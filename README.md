@@ -4,8 +4,8 @@ This is a site that will helps users collect theta by providing free options tra
 
 ## Links
 
-1. [Development Setup](#development-setup)
-2. [Roadmap](ROADMAP.md)
+1. [Roadmap](ROADMAP.md)
+2. [Development Setup](#development-setup)
 3. [Storybook](#storybook)
 
 ## Development Setup
