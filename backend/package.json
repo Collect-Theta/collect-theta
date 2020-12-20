@@ -7,10 +7,8 @@
     "start": "node app.js",
     "server": "nodemon app.js",
     "debug": "node --inspect app.js",
-    "frontend-install": "npm install --prefix frontend",
-    "frontend": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn --cwd ../web install  && yarn --cwd ../web run build"
+    "dev": "concurrently \"yarn server\" \"yarn --cwd ../web start\"",
+    "heroku-postbuild": "yarn --cwd ../web install  && yarn --cwd ../web build"
   },
   "keywords": [],
   "author": "Edmond Hui, Andrew Hu",
