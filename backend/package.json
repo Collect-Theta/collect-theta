@@ -4,7 +4,6 @@
   "description": "An app that lets users automatically trade options strategies",
   "main": "app.js",
   "scripts": {
-    "install": "yarn install",
     "start": "node app.js",
     "server": "nodemon app.js",
     "debug": "node --inspect app.js",
