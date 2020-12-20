@@ -6,6 +6,7 @@ This is a site that will helps users collect theta by providing free options tra
 
 1. [Development Setup](#development-setup)
 2. [Roadmap](ROADMAP.md)
+3. [Storybook](#storybook)
 
 ## Development Setup
 
@@ -24,4 +25,9 @@ Found '$HOME/collect-theta/collect-theta/.nvmrc' with version <v12.14.1>
 N/A: version "v12.14.1 -> N/A" is not yet installed.
 
 You need to run "nvm install v12.14.1" to install it before using it.
+
 ```
+
+## Storybook
+
+Run `yarn storybook` to start Storybook's development server on `localhost:6006` (by default).
