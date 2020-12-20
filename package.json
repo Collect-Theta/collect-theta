@@ -16,7 +16,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "postinstall": "yarn install --cwt backend && yarn install --cwt web"
+    "postinstall": "yarn --cwt backend install && yarn --cwt web install"
   },
   "license": "SEE LICENSE in LICENSE"
 }
