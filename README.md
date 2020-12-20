@@ -28,6 +28,26 @@ You need to run "nvm install v12.14.1" to install it before using it.
 
 ```
 
+### Environment Variables
+
+Unix:
+
+.bashrc
+
+```bash
+export THETA_MONGO_URI=mongodb+srv://username:cluster@mongodb.net/theta...
+export THETA_MONGO_SECRET=xxxxxx
+```
+
+Windows:
+
+cmd
+
+```cmd
+C:\Users\username> SETX /U THETA_MONGO_URI mongodb+srv://username:cluster@mongodb.net/theta...
+C:\Users\username> SETX /U THETA_MONGO_SECRET xxxxxx
+```
+
 ## Storybook
 
 Run `yarn storybook` to start Storybook's development server on `localhost:6006` (by default).
