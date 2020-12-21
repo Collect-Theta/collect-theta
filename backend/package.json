@@ -7,8 +7,7 @@
     "start": "node app.js",
     "server": "nodemon app.js",
     "debug": "node --inspect app.js",
-    "dev": "concurrently \"yarn server\" \"yarn --cwd ../web start\"",
-    "heroku-postbuild": "yarn --cwd ../web install  && yarn --cwd ../web build"
+    "dev": "concurrently \"yarn server\" \"yarn --cwd ../web start\""
   },
   "keywords": [],
   "author": "Edmond Hui, Andrew Hu",

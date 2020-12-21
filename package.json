@@ -16,7 +16,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "postinstall": "yarn --cwd backend install && yarn --cwd web install"
+    "heroku-postbuild": "yarn --cwd web build"
   },
   "license": "SEE LICENSE in LICENSE"
 }
