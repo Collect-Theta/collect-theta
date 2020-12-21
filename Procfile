@@ -1,2 +1,2 @@
-web: yarn --cwd web start
+web: yarn --cwd web start:prod
 backend: yarn --cwd backend start
