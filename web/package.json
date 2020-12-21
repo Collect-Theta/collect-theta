@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:prod": "serve -s build -l 4000 -n",
+    "start:prod": "serve -s build -l $PORT -n",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
