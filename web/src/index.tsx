@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import configureStore from './store/store';
 import reportWebVitals from './reportWebVitals';
-import { setAuthToken } from './util/session_api_util';
+import { setAuthToken } from './util/sessionApiUtil';
 import jwt_decode from 'jwt-decode';
 
 document.addEventListener('DOMContentLoaded', () => {
