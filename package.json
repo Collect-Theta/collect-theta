@@ -18,5 +18,7 @@
     "build-storybook": "build-storybook",
     "heroku-postbuild": "yarn --cwd backend install && yarn --cwd web install && yarn --cwd web build"
   },
-  "license": "SEE LICENSE in LICENSE"
+  "license": "SEE LICENSE in LICENSE",
+  "dependencies": {
+  }
 }

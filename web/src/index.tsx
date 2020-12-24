@@ -6,30 +6,29 @@ import configureStore from './store/store';
 import reportWebVitals from './reportWebVitals';
 import { setAuthToken } from './util/sessionApiUtil';
 import jwt_decode from 'jwt-decode';
+import Root from './root'
 
 document.addEventListener('DOMContentLoaded', () => {
-  let store; 
-  if (localStorage.jwtToken) {
-    setAuthToken(localStorage.jwtToken);
-    const user: any = jwt_decode(localStorage.jwtToken);
-    const preloadedState = {
-      session: {
-        isAuthenticated: true, 
-        user 
-      }
-    }
-    store = configureStore(preloadedState);
-    const currentTime = Date.now() / 1000;
-    if (user.exp < currentTime) {
-      // store.dispatch(logout()); // to do logout action
-    } else {
-      store = configureStore({});
-    }
-  }
+  let store = configureStore({}); 
+  // if (localStorage.jwtToken) {
+  //   setAuthToken(localStorage.jwtToken);
+  //   const user: any = jwt_decode(localStorage.jwtToken);
+  //   const preloadedState = {
+  //     session: {
+  //       isAuthenticated: true, 
+  //       user 
+  //     }
+  //   }
+  //   store = configureStore(preloadedState);
+  //   const currentTime = Date.now() / 1000;
+  //   if (user.exp < currentTime) {
+  //     // store.dispatch(logout()); // to do logout action
+  //   } else {
+  //     store = configureStore({});
+  //   }
+  // }
   ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
+    <Root store={store} />,
     document.getElementById('root')
   );
 });
