@@ -5,30 +5,36 @@ import App from './App';
 import configureStore from './store/store';
 import reportWebVitals from './reportWebVitals';
 import { setAuthToken } from './util/sessionApiUtil';
-import jwt_decode from 'jwt-decode';
+import jwtDecode from 'jwt-decode';
+import StoreProvider from './Root'
+import { HashRouter } from 'react-router-dom';
 
 document.addEventListener('DOMContentLoaded', () => {
-  let store; 
-  if (localStorage.jwtToken) {
-    setAuthToken(localStorage.jwtToken);
-    const user: any = jwt_decode(localStorage.jwtToken);
-    const preloadedState = {
-      session: {
-        isAuthenticated: true, 
-        user 
-      }
-    }
-    store = configureStore(preloadedState);
-    const currentTime = Date.now() / 1000;
-    if (user.exp < currentTime) {
-      // store.dispatch(logout()); // to do logout action
-    } else {
-      store = configureStore({});
-    }
-  }
+  let store = configureStore({}); 
+  // if (localStorage.jwtToken) {
+  //   setAuthToken(localStorage.jwtToken);
+  //   const user: any = jwt_decode(localStorage.jwtToken);
+  //   const preloadedState = {
+  //     session: {
+  //       isAuthenticated: true, 
+  //       user 
+  //     }
+  //   }
+  //   store = configureStore(preloadedState);
+  //   const currentTime = Date.now() / 1000;
+  //   if (user.exp < currentTime) {
+  //     // store.dispatch(logout()); // to do logout action
+  //   } else {
+  //     store = configureStore({});
+  //   }
+  // }
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <StoreProvider store={store}>,
+        <HashRouter>  
+          <App />
+        </HashRouter>
+      </StoreProvider>
     </React.StrictMode>,
     document.getElementById('root')
   );
