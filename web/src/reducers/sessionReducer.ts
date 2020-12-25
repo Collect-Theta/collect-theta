@@ -9,7 +9,12 @@ const initialState = {
   user: {}
 };
 
-const sessionReducer = (state = initialState, action: any) => {
+type SessionAction = {
+   type: typeof RECEIVE_CURRENT_USER | typeof RECEIVE_USER_LOGOUT | typeof RECEIVE_USER_SIGN_IN,
+   currentUser: any
+}
+
+const sessionReducer = (state = initialState, action: SessionAction) => {
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
       return {

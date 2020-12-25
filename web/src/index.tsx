@@ -5,8 +5,9 @@ import App from './App';
 import configureStore from './store/store';
 import reportWebVitals from './reportWebVitals';
 import { setAuthToken } from './util/sessionApiUtil';
-import jwt_decode from 'jwt-decode';
-import Root from './root'
+import jwtDecode from 'jwt-decode';
+import StoreProvider from './Root'
+import { HashRouter } from 'react-router-dom';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store = configureStore({}); 
@@ -28,7 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
   //   }
   // }
   ReactDOM.render(
-    <Root store={store} />,
+    <React.StrictMode>
+      <StoreProvider store={store}>,
+        <HashRouter>  
+          <App />
+        </HashRouter>
+      </StoreProvider>
+    </React.StrictMode>,
     document.getElementById('root')
   );
 });

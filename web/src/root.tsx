@@ -1,14 +1,15 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
-import App from './App';
 
-const Root = (props: any) => (
-  <Provider store={props.store}>
-    <HashRouter>
-      <App />
-    </HashRouter>
+interface Props {
+  children?: React.ReactNode;
+  store: any;
+}
+
+const StoreProvider = ({children, store}: Props) => (
+  <Provider store={store}>
+    {children}
   </Provider>
 );
 
-export default Root;
+export default StoreProvider;
