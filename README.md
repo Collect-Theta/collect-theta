@@ -1,6 +1,6 @@
 # Collect Theta
 
-This is a site that will helps users collect theta by providing free options trading and automated options strategies that users can customize to fit their investing strategies. Users must be exerpeinced option traders to use this app.
+This is a site that will helps users collect theta by providing free options trading and automated options strategies that users can customize to fit their investing strategies. Users must be experienced option traders to use this app.
 
 ## Links
 
